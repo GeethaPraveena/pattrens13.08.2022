@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int i;
+    char a[20];
+    printf("Enter a string:\n");
+    gets(a);
+    for(i=1;a[i]!='\0';i+=2)
+    {
+        a[i]=a[i]-32;
+    }
+    puts(a);
+
+    return 0;
+}
