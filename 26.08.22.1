@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+    int i,count=0,count1=0,count2=0;
+    char a[100];
+    gets(a);
+    for(i=0;a[i]!='\0';i++) 
+    {
+        if(isupper(a[i])) 
+        {
+            count=count+1;
+        }
+        else if(islower(a[i])) 
+        {
+            count1=count1+1;
+        }
+        else if(isdigit(a[i])) 
+        {
+            count2=count2+1;
+        }
+    }
+    printf("count of uppercase=%d\n",count);
+    printf("count of lowercase=%d\n",count1);
+    printf("count of digits=%d\n",count2);
+
+    return 0;
+}
